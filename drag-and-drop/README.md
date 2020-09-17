@@ -5,4 +5,6 @@ A simple kanban board using HTML5 Drag and Drop API. 👉 [Live Demo](https://ji
 Features:
 
 - HTML5 Drag and Drop API
+- Local Storage
 - Responsive Layout
+- Custom Scrollbar
