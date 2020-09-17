@@ -160,17 +160,17 @@ function hideInputBox(column) {
 function rebuildArrays() {
   // backloglist.childrem is not an array, but map only work on arrays.
   // so, you have to change HTML collection into an array using Array.from() method
-  backlogListArray = Array.from(
-    backlogList.children.map((item) => item.textContent)
+  backlogListArray = Array.from(backlogList.children).map(
+    (item) => item.textContent
   );
-  progressListArray = Array.from(
-    progressList.children.map((item) => item.textContent)
+  progressListArray = Array.from(progressList.children).map(
+    (item) => item.textContent
   );
-  completeListArray = Array.from(
-    completeList.children.map((item) => item.textContent)
+  completeListArray = Array.from(completeList.children).map(
+    (item) => item.textContent
   );
-  onHoldListArray = Array.from(
-    onHoldList.children.map((item) => item.textContent)
+  onHoldListArray = Array.from(onHoldList.children).map(
+    (item) => item.textContent
   );
 
   updateDOM();
