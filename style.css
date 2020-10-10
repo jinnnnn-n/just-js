@@ -1,0 +1,89 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  font-weight: 600;
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: -5px;
+}
+
+.container{
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+.card{
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 350px;
+}
+
+a{
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p{
+  color: #a0aec0;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags p{
+  border: 1px solid #61748c;
+  color: #61748c;
+  padding: 0 10px;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  margin: 0 10px 10px 0;
+}
+
+.footer{
+  height: 150px;
+}
+
+/**
+    반응형 코드
+**/
+@media only screen and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
